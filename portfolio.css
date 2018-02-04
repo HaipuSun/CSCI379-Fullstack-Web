@@ -6,7 +6,6 @@
    #358DBD dull blue, links
  */
 
-
 body{
   margin: 50px;
 }
@@ -17,16 +16,19 @@ p {
   color: #05A8FF;
 }
 
+/*font color: light orange*/
 h2 {
   font-family: "Cinzel", serif;
   font-size: 30px;
   color: #FF7400;
 }
 
+/*link color: dull blue*/
 a:visited{
   color: #358DBD;
 }
 
+/*font color: light blue*/
 h3{
   color: rgba(30,144,255,1);
 }
@@ -39,9 +41,10 @@ div{
   padding: 20px;
 }
 
+/*glow light effect for the main heading*/
 .button {
   padding: 10px;
-  font: normal 60px/normal "Warnes", Helvetica, sans-serif;
+  font: normal 60px/normal "Righteous", Helvetica, sans-serif;
   color: rgba(255,165,0,1);
   text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00BFFF , 0 0 70px #00BFFF , 0 0 80px #00BFFF;
 }
@@ -51,6 +54,7 @@ div{
   text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #FFA500 , 0 0 70px #FFA500 , 0 0 80px #FFA500;
 }
 
+/*mobile first*/
 .column{
   width: 100%;
   border-width: 1px;
@@ -62,6 +66,7 @@ div{
   background-color: rgba(255,165,0,0.1);
 }
 
+/*pad second*/
 @media (max-width: 762px) and (min-width: 991px){
   .column{
       float: left;
@@ -77,12 +82,12 @@ div{
   #P3{
     text-align: center;
   }
-
   #Pro3{
     width: 100%;
   }
 }
 
+/*Desktop site last*/
 @media (min-width: 992px) {
   .column{
       float: left;
@@ -100,16 +105,15 @@ div{
   }
 }
 
+/*Sample course work has 100% width in different screen size, we use 99.7% to improve visualization*/
 #sample{
   width: 99.7%;
 }
 
-.selfie{
-
-}
-
+/*adjust the size of image so it can shrink for smaller screen and positioned at right side of screen*/
 .selfie img{
   width: 20%;
   height: 20%;
   float: right;
+  display: block;
 }
