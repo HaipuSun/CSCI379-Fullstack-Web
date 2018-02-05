@@ -54,6 +54,19 @@ div{
   text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #FFA500 , 0 0 70px #FFA500 , 0 0 80px #FFA500;
 }
 
+/*Sample course work has 100% width in different screen size, we use 99.7% to improve visualization*/
+#sample{
+  width: 99.7%;
+}
+
+/*adjust the size of image so it can shrink for smaller screen and positioned at right side of screen*/
+.selfie img{
+  width: 20%;
+  height: 20%;
+  float: right;
+  display: block;
+}
+
 /*mobile first*/
 .column{
   width: 100%;
@@ -101,17 +114,4 @@ div{
   #Pro3{
     text-align: right;
   }
-}
-
-/*Sample course work has 100% width in different screen size, we use 99.7% to improve visualization*/
-#sample{
-  width: 99.7%;
-}
-
-/*adjust the size of image so it can shrink for smaller screen and positioned at right side of screen*/
-.selfie img{
-  width: 20%;
-  height: 20%;
-  float: right;
-  display: block;
 }
