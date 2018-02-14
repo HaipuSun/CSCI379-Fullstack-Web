@@ -56,7 +56,6 @@ div{
 
 /*mobile first*/
 .column{
-  width: 100%;
   border-width: 1px;
   border-style: solid;
   border-color: blue;
@@ -69,7 +68,6 @@ div{
 @media (min-width: 768px) and (max-width: 991px){
   .column{
       float: left;
-      width: 49.7%;
       background-color: rgba(152,251,152,0.5);
   }
   #P1{
@@ -90,7 +88,6 @@ div{
 @media (min-width: 992px) {
   .column{
       float: left;
-      width: 33%;
       background-color: rgba(0,191,255,0.1);
   }
   #P1{
