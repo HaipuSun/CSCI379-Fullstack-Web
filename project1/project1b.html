@@ -1,75 +1,130 @@
+
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset=utf-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Haipu Sun</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../bootstrap-4.0.0/favicon.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="../css/project1b.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Cinzel|Righteous&effct=static" rel="stylesheet">
+
+    <title>Product example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/product.css" rel="stylesheet">
   </head>
+
   <body>
 
-    <section id = "introduction">
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="https://haipusun.github.io/CSCI379-Fullstack-Web/">Github</a>
+        <a class="py-2 d-none d-md-inline-block" href="hs031@bucknell.edu">My Email</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://haipusun.github.io/CSCI379-Fullstack-Web/FontFun/fontfun">Sample Coursework</a>
+        <a class="py-2 d-none d-md-inline-block" href="project1a.html">Project 1</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Project 2</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Project 3</a>
+      </div>
+    </nav>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="selfie">
         <img src = "BU.jpg" height="360" width="225" alt="Image Error">
       </div>
-      <h2>Haipu Sun</h2>
-      <p>Class of 2019 <br>Major: Computer Science & Engineering</p>
-      <nav>
-        <a href="hs031@bucknell.edu">My Email address: hs031@bucknell.edu</a>
-      </nav>
-    </section>
-
-    <section id = "courseinfo">
-      <h2>Course Information</h2>
-      <p>CSCI379 Fullstack Web <br>Instructor: Alan Marchiori <br>Bucknell University spring of 2018</p>
-      <a href="https://github.com/HaipuSun/CSCI379-Fullstack-Web">Github</a>
-    </section>
-
-    <section id = "projects" class="row">
-      <div id = "sample" class = "column col-sm-12 col-md-12 col-lg-12">
-        <h3>Sample Coursework</h3>
-        <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/FontFun/fontfun">Font Fun</a>
-        <p>This is a practice about CSS and font.</p>
-        <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/project1/carousel">My Gundam</a>
-        <p>This is an example of carousel bootstrap.</p>
-        <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/project1/album">Calligraphy in Japan</a>
-        <p>This is an exapmle of album bootstrap.</p>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Haipu Sun</h1>
+        <p class="lead font-weight-normal">Class of 2019 <br>Major: Computer Science & Engineering</p>
+        <a class="btn btn-outline-secondary" href="hs031@bucknell.edu">My Email: hs031@bucknell.edu</a>
       </div>
+    </div>
 
-      <div id = "Pro1" class = "column column col-sm-12 col-md-6 col-lg-4">
-        <h3 id = "P1">Project 1</h3>
-        <a href="">Link to Project 1</a>
-        <p>
-          Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
-          The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
-          As you make the browser window wider or narrower, each section should become wider or narrower.
-          For a visual reference of this view, see the desktop mockup illustration below.
-        </p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Sample Coursework</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/FontFun/fontfun">Font Fun</a>
+          <p>This is a practice about CSS and font.</p>
+          <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/project1/carousel">My Gundam</a>
+          <p>This is an example of carousel bootstrap.</p>
+          <a href="https://haipusun.github.io/CSCI379-Fullstack-Web/project1/album">Calligraphy in Japan</a>
+          <p>This is an exapmle of album bootstrap.</p>
+        </div>
       </div>
+    </div>
 
-      <div id = "Pro2" class = "column column col-sm-12 col-md-6 col-lg-4">
-        <h3 id = "P2">Project 2</h3>
-        <a href="">Link to Project 2</a>
-        <p>
-          Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
-          The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
-          As you make the browser window wider or narrower, each section should become wider or narrower.
-          For a visual reference of this view, see the desktop mockup illustration below.
-        </p>
+    <div class="w-100 my-md-3 pl-md-3">
+      <div class="column column col-sm-12 col-md-6 col-lg-4 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="">Project 1</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <p>
+            Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
+            The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
+            As you make the browser window wider or narrower, each section should become wider or narrower.
+            For a visual reference of this view, see the desktop mockup illustration below.
+          </p>
+        </div>
       </div>
+      <div class="column column col-sm-12 col-md-6 col-lg-4 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="">Project 2</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <p>
+            Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
+            The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
+            As you make the browser window wider or narrower, each section should become wider or narrower.
+            For a visual reference of this view, see the desktop mockup illustration below.
+          </p>
+        </div>
+      </div>
+      <div class="column column col-sm-12 col-md-12 col-lg-4 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="">Project 3</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <p>
+            Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
+            The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
+            As you make the browser window wider or narrower, each section should become wider or narrower.
+            For a visual reference of this view, see the desktop mockup illustration below.
+          </p>
+        </div>
+      </div>
+    </div>
 
-      <div id = "Pro3" class = "column column col-sm-12 col-md-12 col-lg-4">
-        <h3 id = "P3">Project 3</h3>
-        <a href="">Link to Project 3</a>
-        <p>
-          Layout: In the desktop view (992px and above), each of the 3 project sections should take up an equal amount of space on the screen.
-          The labels for Project 1,2, and 3 should be left justified, centered, and right justified respectively.
-          As you make the browser window wider or narrower, each section should become wider or narrower.
-          For a visual reference of this view, see the desktop mockup illustration below.
-        </p>
-      </div>
-    </section>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
   </body>
 </html>
