@@ -35,14 +35,14 @@ class Button extends Component {
             for(i=0; i<result.message.length; i++){
               r = result.message[i]
               newHTML +=
-              "<h4>Course Code: " + r.Course + "</h4>" +
-              "<ul>" +
-              "<li>Course Title: " + r.Title + "</li>" +
-              "<li>Instructor: " + r.Instructor + "</li>" +
-              "<li>Meeting time: " + r["Meeting Time"] + "</li>" +
-              "<li>Room: " + r.Room + "</li>" +
-              "<li>Course Name: " + r.Course + "</li>" +
-              "</ul>"
+              '<div class="card">' +
+              "<h1>" + r.Course + "</h1>" +
+              '<p class="title">' + r.Title + "</p>" +
+              "<p>" + r.Instructor + "</p>" +
+              "<p>" + r["Meeting Time"] + "</p>" +
+              "<p>" + r.Room + "</p>" +
+              '<p><button class="courseButton" onClick={this.handleAddCourse}>Add to Favorite</button><button class="courseButton" onClick={this.handleSaveCourse}>Save Course</button></p>'+
+              "</div>"
             }
 
 

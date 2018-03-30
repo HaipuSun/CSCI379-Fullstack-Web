@@ -17,6 +17,7 @@ import DepartmentTitleBar from './DepartmentTitleBar';
 import CourseNameTitleBar from './CourseNameTitleBar';
 import CourseNumberTitleBar from './CourseNumberTitleBar';
 import ProfessorTitleBar from './ProfessorTitleBar';
+import RecommendTitleBar from './RecommendTitleBar';
 import CourseCard from './CourseCard';
 
 const drawerWidth = 240;
@@ -115,6 +116,10 @@ class MiniDrawer extends React.Component {
     this.setState({searchBar: <DepartmentTitleBar />});
   }
 
+  handleRecommendClick = () => {
+    this.setState({searchBar: <RecommendTitleBar />});
+  }
+
   render() {
     const { classes, theme } = this.props;
     return (
@@ -150,7 +155,7 @@ class MiniDrawer extends React.Component {
             </IconButton>
           </div>
           <Divider />
-          <List>{mailFolderListItems(this.handleDepartmentClick, this.handleProfessorClick, this.handleCourseNameClick, this.handleCourseNumberClick)}</List>
+          <List>{mailFolderListItems(this.handleDepartmentClick, this.handleProfessorClick, this.handleCourseNameClick, this.handleCourseNumberClick, this.handleRecommendClick)}</List>
           <Divider />
           <List>{otherMailFolderListItems}</List>
         </Drawer>
@@ -158,7 +163,7 @@ class MiniDrawer extends React.Component {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <div id='searchBar'>{this.state.searchBar}</div>
-          <div id='courses'></div>
+          <div id='courses'>{this.state.favoriteCourses}</div>
         </main>
 
       </div>

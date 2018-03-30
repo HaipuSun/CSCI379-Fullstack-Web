@@ -42,6 +42,7 @@ class Button extends Component {
               "<p>" + r.Instructor + "</p>" +
               "<p>" + r["Meeting Time"] + "</p>" +
               "<p>" + r.Room + "</p>" +
+              '<p><button class="courseButton" onClick={this.handleAddCourse}>Add to Favorite</button><button class="courseButton" onClick={this.handleSaveCourse}>Save Course</button></p>'+
               "</div>"
             }
 

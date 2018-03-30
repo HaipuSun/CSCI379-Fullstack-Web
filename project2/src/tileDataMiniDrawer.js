@@ -14,8 +14,9 @@ import SearchIcon from 'material-ui-icons/Search';
 import FolderOpen from 'material-ui-icons/FolderOpen';
 import MailIcon from 'material-ui-icons/Mail';
 import TagFace from 'material-ui-icons/TagFaces';
+import RecommendButton from './RecommendButton';
 
-export const mailFolderListItems = (func1,func2,func3,func4) => (
+export const mailFolderListItems = (func1,func2,func3,func4,func5) => (
   <div>
 
     <NestedList handleDepartmentClick={func1} handleProfessorClick={func2} handleCourseNameClick={func3} handleCourseNumberClick={func4}/>
@@ -43,12 +44,7 @@ export const mailFolderListItems = (func1,func2,func3,func4) => (
       <ListItemText primary="Reset" />
     </ListItem>
 
-    <ListItem button>
-      <ListItemIcon>
-        <TagFace />
-      </ListItemIcon>
-      <ListItemText primary="Recommend" />
-    </ListItem>
+    <RecommendButton handleRecommendClick={func5}/>
 
   </div>
 );
